@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudentAppElibrary - Cloud System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Student Information System</h1>
+        <p class="subtitle">Cloud-Based Library & Student Records</p>
+
+        <div class="card">
+            <h3>Add New Student</h3>
+            <form id="studentForm">
+                <input type="text" id="studentName" placeholder="Full Name" required>
+                <input type="text" id="studentID" placeholder="Student ID (e.g. 2024-0001)" required>
+                <input type="text" id="course" placeholder="Course & Year" required>
+                <button type="submit" id="submitBtn">Save Student Record</button>
+            </form>
+        </div>
+
+        <div class="card">
+            <h3>Student Record List</h3>
+            <table id="studentTable">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>ID Number</th>
+                        <th>Course</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="studentList">
+                    </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script type="module" src="script.js"></script>
+</body>
+</html>
